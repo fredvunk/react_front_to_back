@@ -1,0 +1,115 @@
+.toolbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 65px;
+}
+
+.toolbar_navigation {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: space-between;
+}
+
+.toolbar_logo {
+    margin-left: 1rem;
+}
+
+.toolbar_logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.toolbar_navigation-items ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.toolbar_navigation-items li {
+    padding: 0 0.5rem;
+}
+
+.toolbar_navigation-items a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.toolbar_navigation-items a:hover,
+.toolbar_navigation-items a:active {
+    color: #f93;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 6vmin;
+    pointer-events: none;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background: #555;
+    color: #fff;
+    padding: 7px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #666;
+}
+
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .toolbar_navigation-items {
+        display: none;
+    }
+
+    .App-logo {
+        height:  8vmin;
+    }
+
+    .toolbar_logo {
+
+    display: flex;
+    margin-left: auto;
+    order: 2;
+
+    }
+
+}
+
+@media (max-width: 425px ) {
+.App-logo {
+    height: 15vmin;
+}
+}
+
+@media (min-width: 769px) {
+.toolbar_toggle-button {
+    display: none;
+}
+
+.toolbar_logo {
+    margin-left: 0;
+}
+}

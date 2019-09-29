@@ -1,0 +1,30 @@
+table, th, td {
+    border: 1px solid black;
+    font-size: 1.4rem;
+    padding: 2px;
+}
+.odd  a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.odd a:hover {
+    color: black;
+}
+
+.even  a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.even a:hover {
+    color: black;
+}
+
+.odd {
+    background-color: rgba(239, 212, 212, 0.29);
+}
+
+.even {
+    background-color: rgb(239, 178, 24);
+}
